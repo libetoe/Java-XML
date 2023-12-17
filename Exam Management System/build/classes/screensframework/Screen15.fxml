@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="730.0" prefWidth="1366.0" stylesheets="@table.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screensframework.Screen15Controller">
+   <children>
+      <ImageView fitHeight="730.0" fitWidth="1366.0" pickOnBounds="true">
+         <image>
+            <Image url="@../wallpapers/online-examination-system-background-2.jpg" />
+         </image>
+      </ImageView>
+      <JFXTabPane layoutX="637.0" layoutY="214.0" prefHeight="0.0" prefWidth="100.0" tabMinHeight="400.0" tabMinWidth="400.0" />
+      <Label layoutX="100.0" layoutY="17.0" prefHeight="31.0" prefWidth="155.0" style="-fx-background-color: #e1e1e1; -fx-border-radius: 19px;" text="Students ">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="612.0" layoutY="21.0" style="-fx-background-color: #e1e1e1;" text="View All Students">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="36.0" fitWidth="31.0" layoutX="69.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../wallpapers/images1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="31.0" layoutX="587.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../wallpapers/659936-eye-512.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="587.0" layoutY="66.0" text="Search">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="664.0" layoutY="65.0" prefHeight="25.0" prefWidth="170.0" />
+      <ImageView fitHeight="25.0" fitWidth="31.0" layoutX="834.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../wallpapers/BiaE5zkaT.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="12.0" layoutY="647.0" prefHeight="62.0" prefWidth="1350.0">
+         <children>
+            <JFXButton layoutX="575.0" layoutY="15.0" onMouseClicked="#cancelButton" style="-fx-background-color: #00a5ff;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="444.0" layoutY="15.0" onMouseClicked="#editButton" style="-fx-background-color: #00a5ff;" text="Edit" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="337.0" layoutY="15.0" onMouseClicked="#addUserButton" style="-fx-background-color: #00a5ff;" text="Add Student" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="14.0" layoutY="15.0" onMouseClicked="#backButton" style="-fx-background-color: #00a5ff;" text="Go Back" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="1280.0" layoutY="15.0" onMouseClicked="#finishButton" style="-fx-background-color: #00a5ff;" text="Finish" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="499.0" layoutY="15.0" onMouseClicked="#updateButton" style="-fx-background-color: #00a5ff;" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutX="79.0" layoutY="115.0" prefHeight="542.0" prefWidth="455.0" style="-fx-border-color: #15517f;">
+         <children>
+            <Label layoutX="43.0" layoutY="31.0" text="First Name" textFill="#00171e">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="firstname" focusColor="#07ea31" layoutX="146.0" layoutY="27.0" prefWidth="250.0" unFocusColor="RED">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="43.0" layoutY="102.0" text="Last Name" textFill="#00171e">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="lastname" focusColor="#07ea31" layoutX="146.0" layoutY="98.0" prefWidth="250.0" unFocusColor="RED">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="43.0" layoutY="179.0" text="Username" textFill="#00171e">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="username" focusColor="#07ea31" layoutX="146.0" layoutY="175.0" prefWidth="250.0" unFocusColor="RED">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="43.0" layoutY="263.0" text="Password" textFill="#00171e">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="password" focusColor="#07ea31" layoutX="145.0" layoutY="260.0" prefWidth="250.0" unFocusColor="RED">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="43.0" layoutY="429.0" text="Lecture" textFill="#00171e">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="338.0" text="Course Name" textFill="#00171e">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="course" focusColor="#07ea31" layoutX="145.0" layoutY="336.0" prefWidth="250.0" unFocusColor="RED">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <ChoiceBox fx:id="selectlecture" layoutX="128.0" layoutY="427.0" prefHeight="25.0" prefWidth="266.0" />
+         </children>
+      </Pane>
+      <TableView fx:id="studentTable" layoutX="622.0" layoutY="115.0" prefHeight="542.0" prefWidth="727.0">
+         <columns>
+            <TableColumn fx:id="studentID" prefWidth="90.0" text="Student ID" />
+            <TableColumn fx:id="firstName" prefWidth="97.0" text="First Name" />
+            <TableColumn fx:id="lastName" prefWidth="107.0" text="Last Name" />
+            <TableColumn fx:id="userName" prefWidth="110.0" text="User Name" />
+            <TableColumn fx:id="Course" prefWidth="110.0" text="Course" />
+            <TableColumn fx:id="Lecture" prefWidth="106.0" text="Lecture" />
+            <TableColumn fx:id="passWord" prefWidth="106.0" text="Password" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

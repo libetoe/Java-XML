@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+/*-
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.-
+ *-
+ * Copyright (c) 2013 Oracle and/or its affiliates. All rights reserved.-
+ *-
+ * The contents of this file are subject to the terms of either the GNU-
+ * General Public License Version 2 only ("GPL") or the Common Development-
+ * and Distribution License("CDDL") (collectively, the "License"). You-
+ * may not use this file except in compliance with the License. You can-
+ * obtain a copy of the License at-
+ * https://glassfish.dev.java.net/public/CDDL+GPL_1_1.html-
+ * or packager/legal/LICENSE.txt.  See the License for the specific-
+ * language governing permissions and limitations under the License.-
+ *-
+ * When distributing the software, include this License Header Notice in each-
+ * file and include the License file at packager/legal/LICENSE.txt.-
+ *-
+ * GPL Classpath Exception:-
+ * Oracle designates this particular file as subject to the "Classpath"-
+ * exception as provided by Oracle in the GPL Version 2 section of the License-
+ * file that accompanied this code.-
+ *-
+ * Modifications:-
+ * If applicable, add the following below the License Header, with the fields-
+ * enclosed by brackets [] replaced by your own identifying information:-
+ * "Portions Copyright [year] [name of copyright owner]"-
+ *-
+ * Contributor(s):-
+ * If you wish your version of this file to be governed by only the CDDL or-
+ * only the GPL Version 2, indicate your decision by adding "[Contributor]-
+ * elects to include this software in this distribution under the [CDDL or GPL-
+ * Version 2] license."  If you don't indicate a single choice of license, a-
+ * recipient has the option to distribute your version of this file under-
+ * either the CDDL, the GPL Version 2 or to extend the choice of license to-
+ * its licensees as provided above.  However, if you add GPL Version 2 code-
+ * and therefore, elected the GPL Version 2 license, then the option applies-
+ * only if the new code is made subject to such option by the copyright-
+ * holder.-
+ */ -
+-->
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" minHeight="122.0" prefHeight="730.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screensframework.Screen1Controller">
+   <children>
+      <ImageView fitHeight="730.0" fitWidth="1366.0" pickOnBounds="true">
+         <image>
+            <Image url="@../wallpapers/onlineExam.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="420.0" layoutY="63.0" opacity="0.7" prefHeight="539.0" prefWidth="524.0" style="-fx-background-color: #fff;">
+         <children>
+            <JFXTextField fx:id="username" focusColor="#09e2a7" labelFloat="true" layoutX="99.0" layoutY="173.0" prefHeight="40.0" prefWidth="300.0" promptText="Username">
+               <font>
+                  <Font name="Bodoni MT Black" size="20.0" />
+               </font></JFXTextField>
+            <JFXPasswordField fx:id="password" focusColor="#09e2a7" labelFloat="true" layoutX="99.0" layoutY="277.0" prefHeight="40.0" prefWidth="300.0" promptText="Password">
+               <font>
+                  <Font name="Bodoni MT Black" size="21.0" />
+               </font></JFXPasswordField>
+            <JFXButton buttonType="RAISED" layoutX="126.0" layoutY="408.0" onMouseClicked="#cancelButton" prefHeight="40.0" prefWidth="100.0" ripplerFill="#05e811" style="-fx-background-color: linear-gradient(#2A5058, #61a2b1);-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );-fx-text-fill: white;-fx-font-family: Arial Narrow;-fx-font-weight: bold;-fx-font-size: 18px;" text="Cancel" textFill="#ed3b3b">
+               <font>
+                  <Font name="Arial Bold" size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="336.0" layoutY="408.0" onMouseClicked="#loginButton" prefHeight="40.0" prefWidth="100.0" ripplerFill="#05e811" style="-fx-background-color: linear-gradient(#2A5058, #61a2b1);-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );-fx-text-fill: white;-fx-font-family: Arial Narrow;-fx-font-weight: bold;-fx-font-size: 18px;" text="Login" textFill="#ed3b3b">
+               <font>
+                  <Font name="Arial Bold" size="21.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="159.0" fitWidth="174.0" layoutX="169.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../wallpapers/login-icon-7.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="isValid" layoutX="50.0" layoutY="469.0" prefHeight="40.0" prefWidth="449.0" textFill="RED">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font></Label>
+            <JFXRadioButton fx:id="student" layoutX="99.0" layoutY="357.0" text="Student">
+               <toggleGroup>
+                  <ToggleGroup fx:id="userType" />
+               </toggleGroup>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="admin" layoutX="345.0" layoutY="357.0" text="Admin" toggleGroup="$userType" />
+            <JFXRadioButton fx:id="lectureRadio" layoutX="231.0" layoutY="357.0" text="Lecture" toggleGroup="$userType" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

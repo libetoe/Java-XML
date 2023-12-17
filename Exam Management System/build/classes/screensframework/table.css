@@ -1,0 +1,47 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 18, 2019, 12:33:52 AM
+    Author     : LIBETOE
+*/
+.tree-table-view .column-header { 
+    -fx-size: 65; -fx-border-style: null; 
+    -fx-border-color: -swatch-grey; 
+    -fx-border-width: 0 0 2 0; 
+    -fx-background-color: transparent; 
+} 
+.table-view .show-hide-columns-button, 
+.tree-table-view .show-hide-columns-button 
+{ 
+    -fx-background-color: transparent; 
+} 
+.table-view .column-header .label, 
+.table-view .filler .label, 
+.table-view .column-drag-header .label, 
+.tree-table-view .column-header .label, 
+.tree-table-view .filler .label, 
+.tree-table-view .column-drag-header .label 
+{
+    -fx-alignment: CENTER_LEFT; 
+}
+.table-view .column-header-background, 
+.tree-table-view .column-header-background 
+{
+    -fx-background-color: transparent; 
+}
+.table-row-cell, .tree-table-row-cell 
+{ -fx-cell-size: 40px; 
+}
+.table-cell 
+{ -fx-border-color: #1d2828; 
+  /* Vertical Lines*/ 
+  -fx-border-width: 2; 
+  -fx-background-color: transparent;
+}
+.column-header-background{
+  -fx-background-color:#1d2828 ;  
+}
+
